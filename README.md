@@ -4,7 +4,7 @@ A small static website that gathers the roadmap, weekly modules, assessment
 details and study notes for the **Statistics for Data Analysis** module
 (DIPDAB Sep26 cohort, CCT College Dublin).
 
-Live site: _add the GitHub Pages URL here once it's live_
+Live site: https://agusv2022.github.io/statistics-for-data-analysis/
 
 ## What's on the site
 
