@@ -79,7 +79,7 @@ const WEEKS = [
       "SDA_1_Probabilities.pdf — probability, Bayes' theorem, ML application"
     ],
     videos: [
-      { label: "Video 1", url: "" },
+      { label: "Video 1", url: "https://drive.google.com/file/d/1cXSv8P5-DvENKKyIWUGdqx2WA7j68Nus/view?usp=sharing" },
       { label: "Video 2", url: "" }
     ],
     transcript: ""
