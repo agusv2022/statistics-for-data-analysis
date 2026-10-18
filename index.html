@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Statistics for Data Analysis — Course Companion</title>
+  <meta name="description" content="Roadmap, weekly modules and study notes for the Statistics for Data Analysis module (DIPDAB Sep26 cohort, CCT College Dublin)." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <strong>Statistics for Data Analysis</strong>
+        <span>DIPDAB Sep26 cohort · CCT College Dublin</span>
+      </div>
+      <nav class="topnav">
+        <a href="#roadmap">Roadmap</a>
+        <a href="#modules">Modules</a>
+        <a href="#todo">To-do</a>
+        <a href="#resources">Resources</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" title="Toggle dark / light mode" aria-label="Toggle dark / light mode">🌙</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Statistics for Data Analysis</h1>
+      <p class="lead">
+        A single place to track the roadmap, weekly modules, assessments and notes for this
+        module — built from the lecture slides, code and datasets shared in class. Add the two
+        weekly Google Drive video links and any transcripts straight into
+        <code>js/content.js</code> as they become available.
+      </p>
+      <div class="hero-meta">
+        <span>👩‍🏫 Cristiani Eccher, PhD</span>
+        <span>📧 ceccher@cct.ie</span>
+        <span>🗓️ One class per week · two recordings each</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="page-section" id="roadmap">
+      <h2 class="section-title">Roadmap</h2>
+      <p class="section-sub">Six weeks, one class each, building from probability up to normality testing. Click a week to jump to its module.</p>
+      <div class="progress-wrap">
+        <div class="progress-bar"><div class="progress-bar-fill" id="progressFill"></div></div>
+        <div class="progress-label" id="progressLabel">0 / 0 topics checked off</div>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+
+    <section class="page-section" id="modules">
+      <h2 class="section-title">Weekly modules</h2>
+      <p class="section-sub">Topics, key formulas, class materials, video slots and notes for every week.</p>
+      <div id="modulesList"></div>
+    </section>
+
+    <section class="page-section" id="todo">
+      <h2 class="section-title">To-do</h2>
+      <p class="section-sub">Checked items are remembered on this device (saved in your browser, not shared or uploaded anywhere).</p>
+      <div class="todo-list" id="todoList"></div>
+    </section>
+
+    <section class="page-section" id="resources">
+      <h2 class="section-title">Resources</h2>
+      <p class="section-sub">Assessment breakdown, weekly class schedule and recommended reading.</p>
+
+      <h4 class="sub" style="color:var(--blue-600)">Assessments</h4>
+      <div class="card-grid" id="assessGrid"></div>
+
+      <h4 class="sub" style="color:var(--blue-600); margin-top:28px;">Weekly class schedule</h4>
+      <table class="schedule" id="scheduleTable">
+        <thead><tr><th>Time</th><th>Activity</th></tr></thead>
+        <tbody></tbody>
+      </table>
+
+      <h4 class="sub" style="color:var(--blue-600); margin-top:28px;">Recommended reading</h4>
+      <div class="card-grid" id="booksGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    Built for personal study use · content sourced from class slides, code and datasets, not republished in full.
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
