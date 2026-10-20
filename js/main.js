@@ -107,6 +107,11 @@ function renderModule(w) {
   const transcriptHtml = `<h4 class="sub">Notes / transcript</h4>
     <div class="transcript-box">${w.transcript ? escapeHtml(w.transcript) : "No notes yet. Paste a transcript (e.g. from Gemini Notebook) into js/content.js → this week's `transcript` field."}</div>`;
 
+  // w.reading is trusted, hand-authored HTML (not user input) — rendered as-is.
+  const readingHtml = w.reading
+    ? `<h4 class="sub">In depth</h4><div class="reading-content">${w.reading}</div>`
+    : "";
+
   return `
     <article class="module" id="week-${w.id}">
       <div class="module-header">
@@ -121,6 +126,7 @@ function renderModule(w) {
       </div>
       <div class="module-body">
         <p class="module-summary">${escapeHtml(w.summary)}</p>
+        ${readingHtml}
         <div class="module-grid">
           <div>${topicsHtml}${formulasHtml}</div>
           <div>${materialsHtml}${videosHtml}${transcriptHtml}</div>

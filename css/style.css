@@ -5,6 +5,10 @@
   --blue-500: #2088c9;
   --orange-500: #e0772e;
   --orange-400: #ef8f3f;
+  --rose-500: #c2456b;
+  --teal-500: #1f8a7a;
+  --violet-500: #7a5cc9;
+  --amber-500: #c47a1f;
   --bg: #f6f8fa;
   --surface: #ffffff;
   --surface-2: #eef2f6;
@@ -453,6 +457,118 @@ p.section-sub {
   font-size: 0.92rem;
   margin-bottom: 6px;
 }
+
+/* ---------- Reading content: prose, callouts, examples, highlights ---------- */
+.reading-content {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.reading-content p { margin: 0 0 14px; }
+.reading-content p:last-child { margin-bottom: 0; }
+.reading-content strong { font-weight: 700; }
+
+.callout {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--blue-500);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 0 0 14px;
+  font-size: 0.9rem;
+}
+.callout.gold { border-left-color: var(--orange-500); }
+.callout.rose { border-left-color: var(--rose-500); background: color-mix(in srgb, var(--rose-500) 7%, var(--surface-2)); }
+.callout.teal { border-left-color: var(--teal-500); background: color-mix(in srgb, var(--teal-500) 7%, var(--surface-2)); }
+.callout .callout-title {
+  font-weight: 700;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--blue-600);
+  margin-bottom: 5px;
+}
+.callout.gold .callout-title { color: var(--orange-500); }
+.callout.rose .callout-title { color: var(--rose-500); }
+.callout.teal .callout-title { color: var(--teal-500); }
+.callout p { margin: 0 0 5px; }
+.callout p:last-child { margin-bottom: 0; }
+
+.example {
+  background: color-mix(in srgb, var(--orange-500) 7%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--orange-500) 30%, var(--border));
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 0 0 14px;
+  font-size: 0.9rem;
+}
+.example .example-title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--orange-500);
+  margin-bottom: 6px;
+}
+.example p { margin: 0 0 4px; }
+.example p:last-child { margin-bottom: 0; }
+
+mark.hl {
+  background: color-mix(in srgb, var(--orange-400) 35%, transparent);
+  color: inherit;
+  padding: 0.04em 0.3em;
+  border-radius: 4px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+mark.hl.blue { background: color-mix(in srgb, var(--blue-500) 25%, transparent); }
+mark.hl.rose { background: color-mix(in srgb, var(--rose-500) 22%, transparent); }
+mark.hl.teal { background: color-mix(in srgb, var(--teal-500) 22%, transparent); }
+
+.tag {
+  display: inline-block;
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 9px;
+  border-radius: 999px;
+  margin-left: 8px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.tag.amber { background: color-mix(in srgb, var(--amber-500) 20%, transparent); color: var(--amber-500); }
+.tag.rose { background: color-mix(in srgb, var(--rose-500) 18%, transparent); color: var(--rose-500); }
+.tag.blue { background: color-mix(in srgb, var(--blue-500) 18%, transparent); color: var(--blue-600); }
+.tag.violet { background: color-mix(in srgb, var(--violet-500) 20%, transparent); color: var(--violet-500); }
+.tag.teal { background: color-mix(in srgb, var(--teal-500) 18%, transparent); color: var(--teal-500); }
+
+.tech-grid {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 8px;
+}
+.tech-grid li {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--blue-500);
+  border-radius: 7px;
+  padding: 8px 12px;
+  margin: 0 !important;
+}
+.tech-grid li strong { display: block; font-size: 0.88rem; margin-bottom: 2px; }
+.tech-grid li.c2 { border-left-color: var(--orange-500); }
+.tech-grid li.c3 { border-left-color: var(--rose-500); }
+.tech-grid li.c4 { border-left-color: var(--teal-500); }
+.tech-grid li.c5 { border-left-color: var(--violet-500); }
+.tech-grid li.c6 { border-left-color: var(--amber-500); }
 
 ul.materials {
   list-style: none;
